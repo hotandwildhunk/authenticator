@@ -27,3 +27,8 @@ $ mix phx.server
 ## Screenshot
 
 ![Register and Login Button](Authenticator-register-login.png)
+![Registration form](Authenticator-registration-form.png)
+![Successfully Created](Authenticator-user-successfully-created.png)
+![Login form](Authenticator-login-form.png)
+![Setting form](Authenticator-setting-form.png)
+![Log out](Authenticator-logout-successfully.png)
