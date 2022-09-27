@@ -12,9 +12,13 @@ Additional dependencies in mix.exs, let's fetch those:
 
 $ mix deps.get
 
-Then run the following to create the database:
+To verify the database connection
 
 $ mix ecto.setup
+
+Run the migration to create those tables:
+
+$ mix ecto.migrate
 
 Run the tests to make sure our new authentication system works as expected.
 
