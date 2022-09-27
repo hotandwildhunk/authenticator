@@ -1,19 +1,29 @@
 # Authenticator
 
-To start your Phoenix server:
+This is a demostration of using phx.gen.auth for user authentication
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## To get started
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Start by running the following command from the root of the app:
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+$ mix phx.gen.auth Accounts User users
 
-## Learn more
+Additional dependencies in mix.exs, let's fetch those:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+$ mix deps.get
+
+Then run the following to create the database:
+
+$ mix ecto.setup
+
+Run the tests to make sure our new authentication system works as expected.
+
+$ mix test
+
+Finally, start Phoenix server and try it out.
+
+$ mix phx.server
+
+## Screenshot
+
+![Register and Login Button](Authenticator-register-login.png)
